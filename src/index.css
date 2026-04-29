@@ -68,7 +68,7 @@
 
 @media(prefers-color-scheme: dark) {
     :root {
---shadow:none;
+    --shadow:none;
     }
 }
 
