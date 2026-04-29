@@ -1,3 +1,4 @@
+import "./theme-switcher.css";
 
 function ThemeSwitcher() { 
 
