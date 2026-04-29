@@ -142,8 +142,42 @@ svg {
     }
 }
 
+/* =========================== 
+3. GLOBAL STYLES 
+===========================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: var(--body-fg);
+  background-color: var(--body-bg);
+  line-height: 1.5;
+  
+}
+
+
+select,
+input,
+textarea {
+  background: var(--input-bg);
+}
+
+main {
+  padding-block: 2rem 3rem;
+}
+
+
+
 /* ===========================
-5. UTILITY CLASSES
+4. UTILITY CLASSES
 ===========================*/
 .text-accent{
     font-family: var(--ff-accent);
@@ -210,3 +244,6 @@ svg {
 .hidden {
     display: none;
 }
+
+
+
