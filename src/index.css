@@ -3,7 +3,7 @@
 ===================== */
 :root {
     
-    --clr-accent-orange-100: #f2ebe3;
+    --clr-accent-100: #f2ebe3;
 
     --clr-primary-400: #3c8067;
 
@@ -17,6 +17,14 @@
     --clr-neutral-700: #25272b;
     --clr-neutral-800: #151515;
     --clr-neutral-900: #000;
+
+    --body-fg: light-dark(var(--clr-neutral-300), var(--clr-neutral-200));
+  --body-bg: light-dark(var(--clr-accent-100), var(--clr-neutral-700));
+  --header-fg: light-dark( var(--clr-secondary-800),var(--clr-neutral-100));
+  --section-bg: light-dark(var(--clr-neutral-100), var(--clr-neutral-800));
+  --input-bg: light-dark(var(--clr-accent-100), var(--clr-neutral-700));
+  --border-clr: light-dark(var(--clr-neutral-700), var(--clr-neutral-300));
+
 
     --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
