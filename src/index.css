@@ -2,7 +2,7 @@
     1.  ROOT 
 ===================== */
 :root {
-    
+    color-scheme: light dark;
     --clr-accent-100: #f2ebe3;
 
     --clr-primary-400: #3c8067;
@@ -64,6 +64,18 @@
         --fs-body: var(--fs-500);
 
     }
+}
+
+:root:has(.theme-switcher [data-theme="system"]:checked) {
+    color-scheme: light dark;
+}
+
+:root:has(.theme-switcher [data-theme="light"]:checked) {
+    color-scheme: light;
+}
+
+:root:has(.theme-switcher [data-theme="dark"]:checked) {
+    color-scheme: dark;
 }
 
 @media(prefers-color-scheme: dark) {
