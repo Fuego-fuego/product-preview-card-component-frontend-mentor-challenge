@@ -146,3 +146,70 @@ svg {
         scroll-behavior: auto !important;
     }
 }
+
+
+/* =========================== 
+5. UTILITY CLASSES 
+===========================*/
+.primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.container {
+  --max-width: 60em;
+  --padding-inline: 1rem;
+  width: min(var(--max-width), 100% - (var(--padding-inline) * 2));
+  margin-inline: auto;
+}
+
+:where(.flow > *:not(:first-child)) {
+  margin-top: 1.5rem;
+}
+
+.flex{
+display: flex;
+}
+
+
+
+.visually-hidden {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.hidden {
+  display: none;
+}
