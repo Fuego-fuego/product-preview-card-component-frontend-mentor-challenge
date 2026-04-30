@@ -1,44 +1,42 @@
 .btn-wrapper,
-.btn{
-    min-width:100%;
+.btn {
+    min-width: 100%;
 }
 
-.btn{     
- 
+.btn {
     cursor: pointer;
     text-decoration: none;
     font-size: var(--fs-btn);
-    padding:0.7rem 1.5rem;
-    border:none;   
+    padding: 0.7rem 1.5rem;
+    border: none;
     border-radius: var(--border-radius-400);
 }
 
-.btn[data-type="primary"]{
-    
+.btn[data-type="primary"] {
     background-color: var(--btn-primary-bg);
     color: var(--btn-primary-fg);
-    box-shadow: var(--shadow);    
     transition: background-color 0.3s ease;
 }
 
-.btn[data-type="primary"]:is(:hover, :focus-visible){
+.btn[data-type="primary"]:is(:hover, :focus-visible) {
     background-color: var(--btn-primary-bg-hover);
 }
-.btn[data-icon="cart"]{
+
+.btn[data-icon="cart"] {
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
 
-.btn[data-icon="cart"]::before{
-    content: "";    
-    position:absolute;
-    background:url("../../assets/icons/shopping-cart.svg");
-    width:1rem;
+.btn[data-icon="cart"]::before {
+    content: "";
+    position: absolute;
+    background: url("../../assets/icons/shopping-cart.svg");
+    width: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
     aspect-ratio: 1;
-    left:23%;    
+    left: 23%;
 }
