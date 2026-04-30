@@ -1,0 +1,10 @@
+.primary-footer {
+    background: var(--footer-bg);
+    padding-block: 1.5rem 1rem;
+}
+
+.primary-footer__content-wrapper {
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}   

@@ -22,7 +22,7 @@
 
 
 .preview-card__category{
-    letter-spacing:0.275rem;
+    letter-spacing:0.275rem;    
     font-size: var(--fs-preview-card-category);
 }
 
