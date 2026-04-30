@@ -5,8 +5,9 @@
     color-scheme: light dark;
     --clr-accent-100: hsl(30, 38%, 92%);
 
-    --clr-primary-300: hsl(158, 36%, 47%);
+    --clr-primary-300: hsl(158, 36%, 44%);
     --clr-primary-400: hsl(158, 36%, 37%);
+    --clr-primary-600: hsl(158, 42%, 28%);
     --clr-primary-700: hsl(158, 42%, 18%);
 
     --clr-secondary-800: hsl(210, 26%, 19%);
@@ -24,8 +25,10 @@
     --body-bg: light-dark(var(--clr-accent-100), var(--clr-neutral-700));
     --header-fg: light-dark(var(--clr-secondary-800), var(--clr-neutral-100));
     --preview-card-price-fg: light-dark(var(--clr-primary-400), var(--clr-primary-300));
-    --preview-card-bg: light-dark(var(--clr-neutral-100), var(--clr-neutral-800));
-    --input-bg: light-dark(var(--clr-accent-100), var(--clr-neutral-700));
+    --preview-card-bg: light-dark(var(--clr-neutral-100), var(--clr-neutral-800));  
+    --btn-primary-bg: light-dark(var(--clr-primary-400), var(--clr-primary-300));
+    --btn-primary-fg: var(--clr-neutral-100);
+    --btn-primary-bg-hover: light-dark(var(--clr-primary-700), var(--clr-primary-600));
     --border-clr: light-dark(var(--clr-neutral-700), var(--clr-neutral-300));
 
     --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
@@ -165,12 +168,6 @@ body {
   
 }
 
-
-select,
-input,
-textarea {
-  background: var(--input-bg);
-}
 
 main {
   padding-block: 2rem 3rem;

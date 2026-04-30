@@ -26,13 +26,13 @@ const PreviewCard = () => {
                 </p>
                 <div className="preview-card__price-container flex">
                     <p className="preview-card__price | primary-heading fw-bold text-accent ">
-                        $149.99
+                       <span className="visually-hidden">Price: </span> $149.99
                     </p>
                     <p className="preview-card__price-original">
-                        <s>$169.99</s>
+                        <span className="visually-hidden"> Original price: </span><s>$169.99</s>
                     </p>
                 </div>
-                <Button text="Add to Cart" dataType="add-to-cart" />
+                <Button text="Add to Cart" dataType="primary" dataIcon="cart" />
             </div>
         </article>
     );

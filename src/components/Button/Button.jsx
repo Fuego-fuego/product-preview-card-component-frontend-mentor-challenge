@@ -1,13 +1,14 @@
 
+import "./button.css";
 
-
-const Button =({text , dataType})=>{
+const Button =({text , dataType, dataIcon})=>{
 
     return(
-        
-        <button  className="btn" data-type={dataType}>
-            {text}
-        </button>
+<div className="btn-wrapper">    
+    <button  className="btn fw-bold" data-type={dataType} data-icon={dataIcon}>
+        {text}
+    </button>
+</div>
         
     )
 }
