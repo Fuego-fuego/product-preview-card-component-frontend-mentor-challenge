@@ -1,0 +1,241 @@
+/* =====================
+1. ROOT
+===================== */
+:root {
+    color-scheme: light dark;
+    --clr-accent-100: hsl(30, 38%, 92%);
+
+    --clr-primary-300: hsl(158, 36%, 44%);
+    --clr-primary-400: hsl(158, 36%, 37%);
+    --clr-primary-600: hsl(158, 42%, 28%);
+    --clr-primary-700: hsl(158, 42%, 18%);
+
+    --clr-secondary-800: hsl(210, 26%, 19%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(0, 0%, 87%);
+    --clr-neutral-300: #6c7289;
+    --clr-neutral-500: hsl(0, 0%, 41%);
+    --clr-neutral-600: hsl(0, 0%, 27%);
+    --clr-neutral-700: hsl(240, 1%, 17%);
+    --clr-neutral-800: hsl(0, 0%, 10%);
+    --clr-neutral-900: hsl(0, 0%, 0%);
+
+    --body-fg: light-dark(var(--clr-neutral-300), var(--clr-neutral-200));
+    --body-bg: light-dark(var(--clr-accent-100), var(--clr-neutral-700));
+    --header-fg: light-dark(var(--clr-secondary-800), var(--clr-neutral-100));
+    --header-bg: light-dark(var(--clr-neutral-100), var(--clr-neutral-800));  
+    --preview-card-price-fg: light-dark(var(--clr-primary-400), var(--clr-primary-300));
+    --preview-card-bg: light-dark(var(--clr-neutral-100), var(--clr-neutral-800));  
+    --footer-bg: light-dark(var(--clr-neutral-100), var(--clr-neutral-800));  
+    --btn-primary-bg: light-dark(var(--clr-primary-400), var(--clr-primary-300));
+    --btn-primary-fg: var(--clr-neutral-100);
+    --btn-primary-bg-hover: light-dark(var(--clr-primary-700), var(--clr-primary-600));
+    --border-clr: light-dark(var(--clr-neutral-700), var(--clr-neutral-300));
+
+    
+
+    --ff-primary: "Montserrat", sans-serif;
+    --ff-accent: "Fraunces", serif;
+
+    --ff-heading: var(--ff-primary);
+    --ff-body: var(--ff-primary);
+
+    --fw-regular: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 800;
+
+
+    --fs-100: 0.75rem;
+    --fs-150: 0.8125rem;
+    --fs-200: 0.875rem;
+    --fs-700: 2rem;
+
+
+    --fs-primary-heading: var(--fs-700);
+
+    --fs-body: var(--fs-200);
+    --fs-preview-card-category: var(--fs-100);
+    --fs-preview-card-price-original: var(--fs-150);
+    --fs-btn: var(--fs-200);
+
+    --border-radius-400: 8px;
+    --border-radius-500: 10px;
+}
+
+
+
+:root:has(.theme-switcher [data-theme="system"]:checked) {
+    color-scheme: light dark;
+}
+
+:root:has(.theme-switcher [data-theme="light"]:checked) {
+    color-scheme: light;
+}
+
+:root:has(.theme-switcher [data-theme="dark"]:checked) {
+    color-scheme: dark;
+}
+
+
+
+/* =====================
+2. RESET / BASE STYLES
+===================== */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html,
+body {
+    min-height: 100%;
+
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+Link:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* =========================== 
+3. GLOBAL STYLES 
+===========================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    color: var(--header-fg);
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--body-fg);
+  background-color: var(--body-bg);
+  line-height: 1.7;
+  
+}
+
+
+main {
+  padding-block: 4rem;
+  min-height: 100dvh;
+  min-height: 100vh;
+  display:grid;
+  place-items: center;    
+}
+
+
+
+/* ===========================
+4. UTILITY CLASSES
+===========================*/
+.text-accent{
+    font-family: var(--ff-accent);
+}
+
+.primary-heading {
+    font-size: var(--fs-primary-heading);
+}
+
+
+.text-primary-400 {
+    color: var(--clr-primary-400);
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.container {
+    --max-width: 60em;
+    --padding-inline: 1rem;
+    width: min(var(--max-width), 100% - (var(--padding-inline) * 2));
+    margin-inline: auto;
+}
+
+:where(.flow > *:not(:first-child)) {
+    margin-top: var(--flow-spacer,1.5rem);
+}
+
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}   
+.visually-hidden {
+    border: 0;
+    clip-path: inset(50%);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+
+

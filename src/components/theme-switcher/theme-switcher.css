@@ -1,0 +1,12 @@
+.theme-switcher {
+  appearance: none;
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none;    /* Firefox */
+  padding:0.2rem 0.6rem;
+  border:none;
+  background: linear-gradient(135deg, #1b5e20, #00c853, #ffeb3b);
+  backdrop-filter: blur(12px);
+  padding: 0.5rem ;
+  border-radius: var(--border-radius-500);
+}
+

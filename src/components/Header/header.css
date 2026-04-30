@@ -1,0 +1,19 @@
+.primary-header {
+    padding-block: 1.5rem 1rem;
+}
+
+.header-content-wrapper {
+    justify-content: space-between;
+}
+
+.primary-header {
+    background: var(--header-bg);
+}
+
+.logo-wrapper {
+  background-image:  linear-gradient(135deg, #1b5e20, #43a047);
+  padding: 0.5rem ;
+  border-radius: 100vmax;
+}
+
+
