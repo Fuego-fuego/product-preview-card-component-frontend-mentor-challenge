@@ -118,7 +118,7 @@ html:focus-within {
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
+Link:not([class]) {
     text-decoration-skip-ink: auto;
 }
 
