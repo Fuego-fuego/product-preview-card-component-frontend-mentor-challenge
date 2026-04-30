@@ -1,16 +1,72 @@
-# React + Vite
+# Frontend Mentor - Product preview card component solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+- See hover and focus states for interactive elements
+
+### Screenshot
+
+
+
+<p align="center">
+  <img src="./src/assets/screen-shots/light-mode.png" width="600"/>
+</p>
+
+<p align="center">
+  <img src="./src/assets/screen-shots/dark-mode.png" width="600"/>
+</p>
+
+
+
+## My process
+
+### Built with
+
+- Semantic JSX markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+
+
+
+
+### What I learned
+
+Using the picture element to swap out photo's based on the media attribute 
+@previewCard.jsx
+
+```JSX
+            <div className="preview-card__image">
+                <picture>
+                    <source media="(min-width: 765px)" srcSet={desktopImage} />
+                    <img src={mobileImage}
+                        alt="Gabrielle Essence Eau De Parfum bottle on a cream background with decorative leaves on top left and bottom right corners" />
+                </picture>
+            </div>
+```
+
+
+
+
+
+
