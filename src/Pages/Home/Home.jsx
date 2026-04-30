@@ -5,11 +5,9 @@ function Home () {
     return (
         <>
         <Header/>
-        <main className="home">
-            <div className="container">
+        <main className="home">            
                 <div className="main-content-wrapper">
-                    <PreviewCard />
-                </div>
+                    <PreviewCard />                
             </div>
         </main>
         </>
