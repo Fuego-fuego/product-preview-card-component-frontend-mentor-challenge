@@ -1,72 +1,80 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - Product Preview Card Component Solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). These challenges help improve coding skills by building realistic projects.
 
-## Table of contents
+---
+
+## 📑 Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 
+---
 
+## 📌 Overview
 
-## Overview
-
-### The challenge
+### 🎯 The challenge
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+- View the optimal layout depending on their device's screen size  
+- See hover and focus states for interactive elements  
 
-### Screenshot
+---
 
+### 📸 Screenshots
 
-
+#### 💻 Desktop
 <p align="center">
-  <img src="./src/assets/screen-shots/light-mode.png" width="600"/>
+  <img src="./src/assets/screen-shots/light-mode.png" width="48%" />
+  <img src="./src/assets/screen-shots/dark-mode.png" width="48%" />
 </p>
 
+#### 📱 Mobile
 <p align="center">
-  <img src="./src/assets/screen-shots/dark-mode.png" width="600"/>
+  <img src="./src/assets/screen-shots/mobile-light.png" width="280" />
+  <img src="./src/assets/screen-shots/mobile-dark.png" width="280" />
 </p>
 
 
 
-## My process
+---
 
-### Built with
+## ⚙️ My process
 
-- Semantic JSX markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+### 🛠 Built with
 
+- Semantic JSX markup  
+- CSS custom properties  
+- Flexbox  
+- CSS Grid  
+- Mobile-first workflow  
+- React  
 
+---
 
+### 🧠 What I learned
 
-### What I learned
+One key thing I learned was how to use the `<picture>` element to serve responsive images based on screen size. This allows better performance and ensures the correct image is displayed depending on the viewport.
 
-Using the picture element to swap out photo's based on the media attribute 
-@previewCard.jsx
-
-```JSX
-            <div className="preview-card__image">
-                <picture>
-                    <source media="(min-width: 765px)" srcSet={desktopImage} />
-                    <img src={mobileImage}
-                        alt="Gabrielle Essence Eau De Parfum bottle on a cream background with decorative leaves on top left and bottom right corners" />
-                </picture>
-            </div>
+```jsx
+<div className="preview-card__image">
+  <picture>
+    <source media="(min-width: 765px)" srcSet={desktopImage} />
+    <img
+      src={mobileImage}
+      alt="Gabrielle Essence Eau De Parfum bottle on a cream background with decorative leaves."
+    />
+  </picture>
+</div>
 ```
+---
 
+### 🚀 Continued development
 
-
-
-
-
+- Improve accessibility (ARIA, better alt text)
+- Add animations/transitions
