@@ -6,7 +6,7 @@
     background-color:var(--preview-card-bg);    
     border-radius: var(--border-radius-400);
     overflow: hidden;
-    gap:0.7rem;
+    gap:1rem;
 }
 @media (min-width: 765px) {
     .preview-card{
